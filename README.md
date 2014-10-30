@@ -116,7 +116,7 @@ follows:
 
 1. Log in as testuser into the Repository Manager
 2. Create a new directory called tutorial-rbroker
-3. Upload each of the files found in the ./analytics directory
+3. Upload each of the files found in the `./examples/analytics` directory
 4. Set the access control on 5SecondNoOp.R to Public.
 
 Running
