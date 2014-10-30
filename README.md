@@ -72,40 +72,22 @@ Or
 Node.js
 -------
 
-[Download and install](http://nodejs.org/download/) Node.js, which includes npm.
-npm, which stands for _node packaged modules_, is a way to manage development 
-dependencies through Node.js.
+1. [Download and install](http://nodejs.org/download/) Node.js, which includes 
+npm. npm, which stands for _node packaged modules_, is a way to manage 
+development dependencies through Node.js.
 
-From the command line:
+2. ```$npm install rbroker```
 
-1. Navigate to the root ```/rbroker/``` directory.
-
-2. Run ```npm install --production```. npm will look at the package.json file 
-and automatically install the necessary local runtime dependencies listed there.
-
-3. Include the JavaScript Client Library for DeployR ```deployr``` dependency 
-by first installing it using the directions outlined [here](http://deployr.revolutionanalytics.com/documents/dev/client-jsdoc/#install). 
-
-4. Once installed copy the entire ```/deployr``` directory into ```./rbroker/node_modules```.
-This step is needed because the JavaScript Client Library for DeployR is 
-**not yet** registered as a public npm package. This is comming soon.
-
-5. Similar to the JavaScript Client Library for DeployR, the JavaScript RBroker 
-library is **not yet** registered as a published npm package either. After 
-running ```npm install --production``` in step 2, you will need to manually copy 
-the entire ```/rbroker/``` directory into the ```node_modules``` directory of 
-the Node.js project that will be using it.
-
-6. ```require``` the directory in your code:
+3. `require` the directory:
 
 ```
 var rbroker = require('rbroker');
-````
+```
 
 Examples
 ========
 
-The JavaScript RBroker library ships with a set of small examples under the 
+The JavaScript RBroker Framework ships with a set of small examples under the 
 __./rbroker/examples__ directory that run in both the browser and Node.js 
 environments. The intention of the examples are to demonstrate the syntax and 
 core areas of the JavaScript API. They are not intended to be a tutorial on how 
